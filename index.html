@@ -1,85 +1,100 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
-
-  <title>garann/template-chooser @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #1d1c5c;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #e2e3a3; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #e2e3a3; }
-    h3 { text-align: center; color: #e2e3a3; }
-    a { color: #e2e3a3; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
-
-<body>
-  <a href="https://github.com/garann/template-chooser"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/garann/template-chooser/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/garann/template-chooser/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="https://github.com/garann/template-chooser">template-chooser</a>
-      <span class="small">by <a href="https://github.com/garann">garann</a></span></h1>
-
-    <div class="description">
-      
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-      <h2>Contact</h2>
-      <p>Garann Means (garann@gmail.com)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/garann/template-chooser/zipball/master">zip</a> or
-      <a href="https://github.com/garann/template-chooser/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/garann/template-chooser</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/garann/template-chooser">garann/template-chooser</a>
-    </div>
-
-  </div>
-
-</body>
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>So you need a template engine..</title>
+	</head>
+	<body>
+		<a href="https://github.com/garann/template-chooser"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+		<h1>Amazing Template-Engine-Chooser!</h1>
+		<div class="criteria">
+			<fieldset>
+				<legend>Is this for use on the client or the server?</legend>
+				<label>client <input type="radio" name="radSide" value="client-side" /></label>
+				<label>server <input type="radio" name="radSide" value="server-side" /></label>
+				<label>both <input type="radio" name="radSide" value="both-sides" /></label>
+			</fieldset>
+			<fieldset>
+				<legend>How much logic should it have?</legend>
+				<label>the entirety of JS <input type="radio" name="radLogic" value="logicful" /></label>
+				<label>just the basics (conditions, loops, etc.) <input type="radio" name="radLogic" value="logicish" /></label>
+				<label>none at all <input type="radio" name="radLogic" value="logicless" /></label>
+			</fieldset>
+			<fieldset>
+				<legend>Does it need to be one of the very fastest?</legend>
+				<label>yes <input type="radio" name="radSpeed" value="speedy" /></label>
+				<label>no <input type="radio" name="radSpeed" value="slowy" /></label>
+			</fieldset>
+			<fieldset>
+				<legend>Do you need to pre-compile templates?</legend>
+				<label>yes <input type="radio" name="radSide" value="pre-compile" /></label>
+				<label>no <input type="radio" name="radSide" value="jit-compile" /></label>
+			</fieldset>
+			<fieldset>
+				<legend>Do you need partials?</legend>
+				<label>yes <input type="radio" name="radParts" value="parts" /></label>
+				<label>no <input type="radio" name="radParts" value="no-parts" /></label>
+			</fieldset>
+			<fieldset>
+				<legend>Do you want a DOM structure, or just a string?</legend>
+				<label>DOM <input type="radio" name="radDom" value="dom" /></label>
+				<label>string <input type="radio" name="radDom" value="string" /></label>
+			</fieldset>
+			<fieldset>
+				<legend>Aside from template tags, should it look the same before and after rendering?</legend>
+				<label>yes <input type="radio" name="radHtml" value="format" /></label>
+				<label>no <input type="radio" name="radHtml" value="not-format" /></label>
+			</fieldset>
+		</div>
+		<div class="engines">
+			<div class="both-sides logicful slowy pe-compile no-parts dom not-format">
+				<h2>dom.js</h2>
+				<a href=""></a>
+			</div>
+			<div class="both-sides logicless speedy pe-compile parts string format">
+				<h2>doT.js</h2>
+				<a href=""></a>
+			</div>
+			<div class="both-sides logicish speedy pre-compile parts string format">
+				<h2>dust.js</h2>
+				<a href=""></a>
+			</div>
+			<div class="both-sides logicful slowy pre-compile parts string format">
+				<h2>EJS</h2>
+				<a href=""></a>
+			</div>
+			<div class="client-side logicish slowy pre-compile parts string format">
+				<h2>Handlebars.js</h2>
+				<a href=""></a>
+			</div>
+			<div class="both-sides logicish slowy pre-compile parts string format">
+				<h2>Hogan.js</h2>
+				<a href=""></a>
+			</div>
+			<div class="client-side logicish slowy jit-compile parts string format">
+				<h2>ICanHaz.js</h2>
+				<a href=""></a>
+			</div>
+			<div class="both-sides logicish slowy pre-compile parts string not-format">
+				<h2>Jade templates</h2>
+				<a href=""></a>
+			</div>
+			<div class="both-sides logicful speedy pre-compile no-parts string format">
+				<h2>Microtemplating</h2>
+				<a href=""></a>
+			</div>
+			<div class="both-sides logicish slowy jit-compile parts string format">
+				<h2>Mustache.js</h2>
+				<a href=""></a>
+			</div>
+			<div class="both-sides logicless slowy jit-compile no-parts string format">
+				<h2>Plates.js</h2>
+				<a href=""></a>
+			</div>
+			<div class="both-sides logicful slowy pre-compile no-parts string format">
+				<h2>Underscore templates</h2>
+				<a href=""></a>
+			</div>
+		</div>
+	</body>
 </html>
