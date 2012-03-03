@@ -11,6 +11,6 @@ $( function () {
 		e.stopPropagation();
 		var cname = $( this ).find( "input" ).val();
 		$( "div.engines div:not(." + cname + ")" ).removeClass( "add" ).addClass( "remove" );
-		$( "div.engines div." + cname ).addClass( "add" ).removeClass( "remove" );
+		//$( "div.engines div." + cname ).addClass( "add" ).removeClass( "remove" );
 	});
 });
