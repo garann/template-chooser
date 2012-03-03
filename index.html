@@ -28,13 +28,13 @@
 			</fieldset>
 			<fieldset class="off">
 				<legend>Do you need to pre-compile templates?</legend>
-				<label>yes <input type="radio" name="radSide" value="pre-compile" /></label>
-				<label>no <input type="radio" name="radSide" value="jit-compile" /></label>
+				<label>yes <input type="radio" name="radSide" value="compile" /></label>
+				<label>no <input type="radio" name="radSide" value="" /></label>
 			</fieldset>
 			<fieldset class="off">
 				<legend>Do you need partials?</legend>
 				<label>yes <input type="radio" name="radParts" value="parts" /></label>
-				<label>no <input type="radio" name="radParts" value="no-parts" /></label>
+				<label>no <input type="radio" name="radParts" value="" /></label>
 			</fieldset>
 			<fieldset class="off">
 				<legend>Do you want a DOM structure, or just a string?</legend>
@@ -48,51 +48,47 @@
 			</fieldset>
 		</div>
 		<div class="engines">
-			<div class="both-sides logicful pe-compile no-parts dom not-format">
+			<div class="both-sides logicful compile dom not-format">
 				<h2>dom.js</h2>
 				<a href=""></a>
 			</div>
-			<div class="both-sides logicless speedy pe-compile parts string format">
+			<div class="both-sides logicish speedy compile parts string format">
 				<h2>doT.js</h2>
 				<a href=""></a>
 			</div>
-			<div class="both-sides logicish speedy pre-compile parts string format">
-				<h2>dust.js</h2>
-				<a href=""></a>
-			</div>
-			<div class="both-sides logicful pre-compile parts string format">
+			<div class="both-sides logicful compile parts string format">
 				<h2>EJS</h2>
 				<a href=""></a>
 			</div>
-			<div class="client-side logicish pre-compile parts string format">
+			<div class="client-side logicish compile parts string format">
 				<h2>Handlebars.js</h2>
 				<a href=""></a>
 			</div>
-			<div class="both-sides logicish pre-compile parts string format">
+			<div class="both-sides logicish compile parts string format">
 				<h2>Hogan.js</h2>
 				<a href=""></a>
 			</div>
-			<div class="client-side logicish jit-compile parts string format">
+			<div class="client-side logicish parts string format">
 				<h2>ICanHaz.js</h2>
 				<a href=""></a>
 			</div>
-			<div class="both-sides logicish pre-compile parts string not-format">
+			<div class="both-sides logicish compile parts string not-format">
 				<h2>Jade templates</h2>
 				<a href=""></a>
 			</div>
-			<div class="both-sides logicful speedy pre-compile no-parts string format">
+			<div class="both-sides logicful speedy compile string format">
 				<h2>Microtemplating</h2>
 				<a href=""></a>
 			</div>
-			<div class="both-sides logicish jit-compile parts string format">
+			<div class="both-sides logicish parts string format">
 				<h2>Mustache.js</h2>
 				<a href=""></a>
 			</div>
-			<div class="both-sides logicless jit-compile no-parts string format">
+			<div class="both-sides logicless string format">
 				<h2>Plates.js</h2>
 				<a href=""></a>
 			</div>
-			<div class="both-sides logicful pre-compile no-parts string format">
+			<div class="both-sides logicful compile string format">
 				<h2>Underscore templates</h2>
 				<a href=""></a>
 			</div>

@@ -22,7 +22,8 @@ $( function () {
 			removeIndex = chooser.choices.indexOf( $( this ).find( "input" ).val() );
 			if ( removeIndex > -1 ) chooser.choices.splice( removeIndex, 1 );
 		});
-		chooser.choices.push( cname );
+		if ( cname.length ) chooser.choices.push( cname );
+		if ( !chooser.choices.length ) return;
 		classes = chooser.choices.join( "." )
 		$( "div.engines div:not(." + classes + ")" ).addClass( "remove" ).removeClass( "add" );
 		$( "div.engines div." + classes ).addClass( "add" ).removeClass( "remove" );
