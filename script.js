@@ -1,3 +1,7 @@
+var chooser = {
+	choices: []
+};
+
 $( function () {
 	$( "div.criteria" ).on( "click", "fieldset", function() {
 		var $t = $( this );
@@ -9,8 +13,18 @@ $( function () {
 	});
 	$( "div.criteria" ).on( "click", "label", function( e ) {
 		e.stopPropagation();
-		var cname = $( this ).find( "input" ).val();
-		$( "div.engines div:not(." + cname + ")" ).removeClass( "add" ).addClass( "remove" );
-		//$( "div.engines div." + cname ).addClass( "add" ).removeClass( "remove" );
+		var $t = $( this ),
+			cname = $t.find( "input" ).val(),
+			sibs = $t.siblings( "label" ),
+			removeIndex,
+			classes;
+		$( sibs ).each( function() {
+			removeIndex = chooser.choices.indexOf( $( this ).find( "input" ).val() );
+			if ( removeIndex > -1 ) chooser.choices.splice( removeIndex, 1 );
+		});
+		chooser.choices.push( cname );
+		classes = chooser.choices.join( "." )
+		$( "div.engines div:not(." + classes + ")" ).addClass( "remove" ).removeClass( "add" );
+		$( "div.engines div." + classes ).addClass( "add" ).removeClass( "remove" );
 	});
 });
