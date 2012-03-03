@@ -39,7 +39,9 @@ input { float: left; margin-top: 15px; font-size: 40px; }
 .forkme { display: block; position: absolute; top: 0; right: 0; border: 0; }
 .criteria { width: 450px; margin: 10px; float: left; overflow: hidden; }
 .engines { padding-top: 5px; overflow: hidden; }
-.engines div { background-color: #f80; padding: 10px; margin: 5px; float: left; }
+.engines div { background-color: #f80; padding: 10px; margin: 5px; float: left; text-align: center; }
+.engines a { font-family: helvetica, arial, sans-serif; color: #ccc; font-size: 16px; }
+.engines a:hover { color: #fff; }
 .remove { -webkit-animation: laterz 1s 0s 1 forwards; -moz-animation: laterz 1s 0s 1 forwards; }
 .add { -webkit-animation: helloz 1s 0s 1 forwards; -moz-animation: helloz 1s 0s 1 forwards; }
 
