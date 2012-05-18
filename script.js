@@ -3,7 +3,8 @@ var chooser = {
 };
 
 $( function () {
-	$( "div.criteria" ).on( "click", "fieldset", function() {
+	var $criteria = $( ".criteria" );
+	$criteria.on( "click", "fieldset", function() {
 		var $t = $( this );
 		if ( $t.hasClass( "off" ) ) {
 			$t.removeClass( "off" ).addClass( "on" );
@@ -11,14 +12,14 @@ $( function () {
 			$t.addClass( "off" ).removeClass( "on" );
 		}
 	});
-	$( "div.criteria" ).on( "click", "label", function( e ) {
+	$criteria.on( "click", "label", function( e ) {
 		e.stopPropagation();
 		var $t = $( this ),
 			cname = $t.find( "input" ).val(),
-			sibs = $t.siblings( "label" ),
+			$sibs = $t.siblings( "label" ),
 			removeIndex,
 			classes;
-		$( sibs ).each( function() {
+		$sibs.each( function() {
 			removeIndex = chooser.choices.indexOf( $( this ).find( "input" ).val() );
 			if ( removeIndex > -1 ) chooser.choices.splice( removeIndex, 1 );
 		});
@@ -33,7 +34,7 @@ $( function () {
 		}
 		if ( !chooser.choices.length ) return;
 		classes = chooser.choices.join( "." );
-		$( "div.engines div:not(." + classes + ")" ).addClass( "remove" ).removeClass( "add" );
-		$( "div.engines div." + classes ).addClass( "add" ).removeClass( "remove" );
+		$( ".engines div:not(." + classes + ")" ).addClass( "remove" ).removeClass( "add" );
+		$( ".engines div." + classes ).addClass( "add" ).removeClass( "remove" );
 	});
 });
