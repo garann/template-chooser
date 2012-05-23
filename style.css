@@ -26,7 +26,7 @@ body { background-attachment: fixed;
 			color-stop(1, rgb(140,140,137))
 		);
 }
-h1 { padding: 10px; text-align: center; font-size: 72px; color: rgba(255,255,255,.4); text-shadow: 1px 4px 6px #7f7f7f, 0 0 0 #000, 1px 4px 6px #7f7f7f;}
+h1 { padding: 10px; text-align: center; font-size: 72px; color: rgba(255,255,255,.6); text-shadow: 1px 4px 6px #333; }
 h2 { margin: 5px 0px; text-shadow: 2px 2px 2px rgba(50,50,50,.3); }
 fieldset { margin: 0px; padding: 0px; overflow: hidden; border: none; padding: 0px 10px 10px; text-shadow: 2px 2px 2px #444; }
 legend { background-color: #eee; color: #666; padding: 5px; width: 100%; text-shadow: 2px 2px 2px #999; cursor: pointer; }
@@ -40,7 +40,9 @@ input { float: left; margin-top: 15px; font-size: 40px; }
 .criteria { width: 450px; margin: 10px; float: left; overflow: hidden; }
 .engines { padding-top: 5px; overflow: hidden; }
 .engines div { background-color: #f80; padding: 10px; margin: 5px; float: left; text-align: center; }
-.engines a { font-family: helvetica, arial, sans-serif; color: #ccc; font-size: 16px; }
+.engines a,
+.engines span { font-family: helvetica, arial, sans-serif; color: #ccc; font-size: 16px; }
+.engines span { font-size: 14px; color: #666; }
 .engines a:hover { color: #fff; }
 .remove { -webkit-animation: laterz 1s 0s 1 forwards; -moz-animation: laterz 1s 0s 1 forwards; -o-animation: laterz 1s 0s 1 forwards; }
 .add { -webkit-animation: helloz 1s 0s 1 forwards; -moz-animation: helloz 1s 0s 1 forwards; -o-animation: helloz 1s 0s 1 forwards; }
