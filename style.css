@@ -26,10 +26,10 @@ body { background-attachment: fixed;
 			color-stop(1, rgb(140,140,137))
 		);
 }
-h1 { padding: 10px; text-align: center; font-size: 72px; color: rgba(255,255,255,.6); text-shadow: 1px 4px 6px #333; }
+h1 { padding: 10px; text-align: center; font-size: 72px; color: rgba(255,255,255,.6); letter-spacing: .05em; }
 h2 { margin: 5px 0px; text-shadow: 2px 2px 2px rgba(50,50,50,.3); }
-fieldset { margin: 0px; padding: 0px; overflow: hidden; border: none; padding: 0px 10px 10px; text-shadow: 2px 2px 2px #444; }
-legend { background-color: #eee; color: #666; padding: 5px; width: 100%; text-shadow: 2px 2px 2px #999; cursor: pointer; }
+fieldset { margin: 0px; padding: 0px; overflow: hidden; border: none; padding: 0px 10px 10px; letter-spacing: .05em; }
+legend { background-color: #eee; color: #666; padding: 5px; width: 100%; cursor: pointer; }
 .on legend:before { content: "▼ "; }
 .off legend:before { content: "▶ "; }
 .on label { display: block; overflow: hidden; }
