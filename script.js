@@ -25,10 +25,14 @@ $( function () {
 		if ( cname.length ) {
 			if ( cname.indexOf( "." ) > -1 ) {
 				$.each( cname.split( "." ), function( i, nm ) {
-					chooser.choices.push( nm );
+					if ( chooser.choices.indexOf( nm ) === -1 ) {
+						chooser.choices.push( nm );
+					}
 				});
 			} else {
-				chooser.choices.push( cname );
+				if ( chooser.choices.indexOf( cname ) === -1 ) {
+					chooser.choices.push( cname );
+				}
 			}
 		}
 		if ( !chooser.choices.length ) return;
