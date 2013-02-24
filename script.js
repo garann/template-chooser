@@ -27,11 +27,17 @@ $( function () {
 				$.each( cname.split( "." ), function( i, nm ) {
 					if ( chooser.choices.indexOf( nm ) === -1 ) {
 						chooser.choices.push( nm );
+					} else {
+						chooser.choices.splice( chooser.choices.indexOf( nm ), 1 );
+						$t.removeAttr( "checked" );
 					}
 				});
 			} else {
 				if ( chooser.choices.indexOf( cname ) === -1 ) {
 					chooser.choices.push( cname );
+				} else {
+					chooser.choices.splice( chooser.choices.indexOf( cname ), 1 );
+					$t.removeAttr( "checked" );
 				}
 			}
 		}
