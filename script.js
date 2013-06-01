@@ -36,11 +36,11 @@ $( function () {
 			}
 		}
 		if ( !chooser.choices.length ) { // no filters...
-		  $( "div.engines div").addClass("add"); // ...show everything
+		  $( "div.engines div").removeClass("remove"); // ...show everything
 		  return;
 		}
 		classes = chooser.choices.join( "." );
-		$( "div.engines div:not(." + classes + ")" ).addClass( "remove" ).removeClass( "add" );
-		$( "div.engines div." + classes ).addClass( "add" ).removeClass( "remove" );
+		$( "div.engines div:not(." + classes + ")" ).addClass( "remove" );
+		$( "div.engines div." + classes ).removeClass( "remove" );
 	});
 });
