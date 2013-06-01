@@ -35,7 +35,10 @@ $( function () {
 				}
 			}
 		}
-		if ( !chooser.choices.length ) return;
+		if ( !chooser.choices.length ) { // no filters...
+		  $( "div.engines div").addClass("add"); // ...show everything
+		  return;
+		}
 		classes = chooser.choices.join( "." );
 		$( "div.engines div:not(." + classes + ")" ).addClass( "remove" ).removeClass( "add" );
 		$( "div.engines div." + classes ).addClass( "add" ).removeClass( "remove" );
