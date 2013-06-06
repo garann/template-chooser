@@ -11,7 +11,7 @@
 }
 
 html { position: relative; height: 100%; width: 100%; padding: 0px; margin: 0px; } 
-body { padding: 0px; margin: 0px; font-size: 24px; font-family: forque, sans-serif; color: #eee; }
+body { padding: 0px; margin: 0px; font-size: 24px; font-family: helvetica, sans-serif; letter-spacing: -.05em; color: #eee; }
 body { background-attachment: fixed;
 		background-image: linear-gradient(bottom, rgb(46,46,46) 0%, rgb(140,140,137) 100%);
 		background-image: -o-linear-gradient(bottom, rgb(46,46,46) 0%, rgb(140,140,137) 100%);
@@ -26,15 +26,15 @@ body { background-attachment: fixed;
 			color-stop(1, rgb(140,140,137))
 		);
 }
-h1 { padding: 10px; text-align: center; font-size: 72px; color: rgba(255,255,255,.6); letter-spacing: .05em; }
+h1 { padding: 10px; text-align: center; font-size: 72px; color: rgba(255,255,255,.6); text-shadow: 2px 2px 2px rgba(50,50,50,.3); }
 h2 { margin: 5px 0px; text-shadow: 2px 2px 2px rgba(50,50,50,.3); }
-fieldset { margin: 0px; padding: 0px; overflow: hidden; border: none; padding: 0px 10px 10px; letter-spacing: .05em; }
+fieldset { margin: 0px; padding: 0px; overflow: hidden; border: none; padding: 0px 10px 10px; }
 legend { background-color: #eee; color: #666; padding: 5px; width: 100%; cursor: pointer; }
 .on legend:before { content: "▼ "; }
 .off legend:before { content: "▶ "; }
 .on label { display: block; overflow: hidden; }
 .off label { display: none; }
-input { float: left; margin-top: 15px; font-size: 40px; }
+input { float: left; margin-top: .2em; font-size: 40px; }
 
 .forkme { display: block; position: absolute; top: 0; right: 0; border: 0; }
 .criteria { width: 450px; margin: 10px; float: left; overflow: hidden; }
