@@ -1,8 +1,119 @@
-var chooser = {
-	choices: []
+var engines = [
+		{
+			name: "dom.js",
+			link: "https://github.com/medikoo/domjs",
+			link_text: "github",
+			size: "",
+			traits: [ "client-side","server-side","logicful","compile","dom","not-format" ]
+		},
+		{
+			name: "doT.js",
+			link: "http://olado.github.com/doT/",
+			link_text: "project",
+			size: "2.742k",
+			traits: [ "client-side","server-side","logicful","speedy","compile","parts","string","format" ]
+		},
+		{
+			name: "EJS",
+			link: "http://embeddedjs.com/",
+			link_text: "project",
+			size: "9.8k",
+			traits: [ "client-side","server-side","logicful","compile","parts","string","format" ]
+		},
+		{
+			name: "Handlebars.js",
+			link: "http://handlebarsjs.com/",
+			link_text: "project",
+			size: "",
+			traits: [ "client-side","server-side","logicish","compile","parts","string","format" ]
+		},
+		{
+			name: "Hogan.js",
+			link: "http://twitter.github.com/hogan.js/",
+			link_text: "project",
+			size: "2.5k",
+			traits: [ "client-side","server-side","logicish","compile","parts","string","format" ]
+		},
+		{
+			name: "ICanHaz.js",
+			link: "http://icanhazjs.com/",
+			link_text: "project",
+			size: "5.445k",
+			traits: [ "client-side","logicish","parts","string","format" ]
+		},
+		{
+			name: "Jade templates",
+			link: "https://github.com/visionmedia/jade",
+			link_text: "github",
+			size: "39.687k",
+			traits: [ "client-side","server-side","logicish","compile","parts","string","not-format" ]
+		},
+		{
+			name: "JsRender",
+			link: "http://borismoore.github.com/jsrender/demos/index.html",
+			link_text: "project",
+			size: "30.709k",
+			traits: [ "client-side","server-side","logicish","compile","parts","string","format" ]
+		},
+		{
+			name: "Markup.js",
+			link: "https://github.com/adammark/Markup.js",
+			link_text: "github",
+			size: "5.1k",
+			traits: [ "client-side","server-side","logicish","string","format" ]
+		},
+		{
+			name: "Microtemplating",
+			link: "http://ejohn.org/blog/javascript-micro-templating/",
+			link_text: "blog post",
+			size: "1k",
+			traits: [ "client-side","server-side","logicful","speedy","compile","parts","string","not-format" ]
+		},
+		{
+			name: "Mustache.js",
+			link: "https://github.com/janl/mustache.js/",
+			link_text: "github",
+			size: "14.513k",
+			traits: [ "client-side","server-side","logicish","compile","parts","string","format" ]
+		},
+		{
+			name: "Plates.js",
+			link: "https://github.com/flatiron/plates",
+			link_text: "github",
+			size: "10.811k",
+			traits: [ "client-side","server-side","logicless","string","format" ]
+		},
+		{
+			name: "pure.js",
+			link: "http://beebole.com/pure",
+			link_text: "project",
+			size: "11.7k",
+			traits: [ "client-side","logicless","compile","parts","dom","format" ]
+		},
+		{
+			name: "Transparency",
+			link: "http://leonidas.github.com/transparency/",
+			link_text: "project",
+			size: "5.491k",
+			traits: [ "client-side","logicless","dom","format" ]
+		},
+		{
+			name: "Underscore templates",
+			link: "http://documentcloud.github.com/underscore/#template",
+			link_text: "project",
+			size: "4k",
+			traits: [ "client-side","server-side","logicful","compile","string","format","speedy" ]
+		}
+	],
+	chooser = {
+		choices: []
 };
 
 $( function () {
+	// render all engines
+	var tmpls = doT.template( $( "#tmplsTmpl" ).text() );
+	$( "div.engines" ).html( tmpls( { all: engines } ) );
+
 	$( "div.criteria" ).on( "click", "fieldset", function() {
 		var $t = $( this );
 		if ( $t.hasClass( "off" ) ) {

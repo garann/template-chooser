@@ -41,7 +41,7 @@ input { float: left; margin-top: .2em; font-size: 40px; }
 .engines { padding-top: 5px; overflow: hidden; }
 .engines div { background-color: #f80; padding: 10px; margin: 5px; float: left; text-align: center; }
 .engines a,
-.engines span { font-family: helvetica, arial, sans-serif; color: #ccc; font-size: 16px; }
+.engines span { letter-spacing: 0; color: #ccc; font-size: 16px; }
 .engines span { font-size: 14px; color: #666; }
 .engines a:hover { color: #fff; }
 .remove { -webkit-animation: laterz 1s 0s 1 forwards; -moz-animation: laterz 1s 0s 1 forwards; -o-animation: laterz 1s 0s 1 forwards; }
