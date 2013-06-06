@@ -11,7 +11,7 @@
 }
 
 html { position: relative; height: 100%; width: 100%; padding: 0px; margin: 0px; } 
-body { padding: 0px; margin: 0px; font-size: 24px; font-family: helvetica, sans-serif; letter-spacing: -.05em; color: #eee; }
+body { padding: 0 0 4em; margin: 0px; font-size: 24px; font-family: helvetica, sans-serif; letter-spacing: -.05em; color: #eee; }
 body { background-attachment: fixed;
 		background-image: linear-gradient(bottom, rgb(46,46,46) 0%, rgb(140,140,137) 100%);
 		background-image: -o-linear-gradient(bottom, rgb(46,46,46) 0%, rgb(140,140,137) 100%);
@@ -29,22 +29,24 @@ body { background-attachment: fixed;
 h1 { padding: 10px; text-align: center; font-size: 72px; color: rgba(255,255,255,.6); text-shadow: 2px 2px 2px rgba(50,50,50,.3); }
 h2 { margin: 5px 0px; text-shadow: 2px 2px 2px rgba(50,50,50,.3); }
 fieldset { margin: 0px; padding: 0px; overflow: hidden; border: none; padding: 0px 10px 10px; }
-legend { background-color: #ccc; color: #666; padding: 5px; width: 100%; cursor: pointer; }
-legend:before { content: "▶ "; }
+legend { background-color: #ccc; color: #666; padding: 5px; width: 100%; cursor: pointer; margin-bottom: .2em; }
+legend:before { content: "▶ "; font-size: .7em; }
 label { display: none; }
 .on legend { background-color: #eee; }
 .on legend:before { content: "▼ "; }
 .on label { display: block; overflow: hidden; }
 input { float: left; margin-top: .2em; font-size: 40px; }
+a { color: #ccc; }
+a:hover { color: #fff; }
+footer { opacity: .6; width: 100%; text-align: center; letter-spacing: 0; font-size: 16px; background-color: #333; position: fixed; bottom: 0px; padding: 1em; }
 
 .forkme { display: block; position: absolute; top: 0; right: 0; border: 0; }
 .criteria { width: 450px; margin: 10px; float: left; overflow: hidden; }
 .engines { padding-top: 5px; overflow: hidden; }
 .engines div { background-color: #f80; padding: 10px; margin: 5px; float: left; text-align: center; }
 .engines a,
-.engines span { letter-spacing: 0; color: #ccc; font-size: 16px; }
+.engines span { letter-spacing: 0; font-size: 16px; }
 .engines span { font-size: 14px; color: #666; }
-.engines a:hover { color: #fff; }
 .remove {  
 	-webkit-transition: opacity 1s ease;
     -moz-transition: opacity 1s ease; 
