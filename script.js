@@ -77,6 +77,13 @@ var engines = [
 			traits: [ "client-side","server-side","logicish","compile","parts","string","format" ]
 		},
 		{
+			name: "Nunjucks",
+			link: "https://github.com/jlongster/nunjucks",
+			link_text: "github",
+			size: "20k",
+			traits: [ "client-side","server-side","logicish","compile","parts","string","format" ]
+		},
+		{
 			name: "Plates.js",
 			link: "https://github.com/flatiron/plates",
 			link_text: "github",
