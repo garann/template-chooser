@@ -14,6 +14,13 @@ var engines = [
 			traits: [ "client-side","server-side","logicful","speedy","compile","parts","string","format" ]
 		},
 		{
+			name: "dust.js (LinkedIn)",
+			link: "http://github.com/linkedin/dustjs/",
+			link_text: "github",
+			size: "9.3k",
+			traits: [ "client-side","server-side","logicish","compile","parts","string","format" ]
+		},
+		{
 			name: "EJS",
 			link: "http://embeddedjs.com/",
 			link_text: "project",
