@@ -1,5 +1,12 @@
 var engines = [
 		{
+			name: "Contemplate",
+			link: "https://github.com/foo123/Contemplate",
+			link_text: "github",
+			size: "23.6K",
+			traits: [ "client-side","server-side","logicish","compile","string","parts","format" ]
+		},
+		{
 			name: "dom.js",
 			link: "https://github.com/medikoo/domjs",
 			link_text: "github",
