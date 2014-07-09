@@ -117,6 +117,13 @@ var engines = [
 			link_text: "project",
 			size: "4k",
 			traits: [ "client-side","server-side","logicful","compile","string","format","speedy" ]
+		},
+		{
+			name: "xGen",
+			link: "https://github.com/teknopaul/xgenjs",
+			link_text: "project",
+			size: "3.5k",
+			traits: [ "client-side","server-side","logicful","compile","dom","not-format" ]
 		}
 	],
 	chooser = {
