@@ -7,6 +7,13 @@ var engines = [
 			traits: [ "client-side","server-side","logicful","compile","dom","not-format" ]
 		},
 		{
+			name: "DOMly",
+			link: "https://github.com/lazd/DOMly/",
+			link_text: "github",
+			size: "0k",
+			traits: [ "client-side","logicful","speedy","compile","dom","format" ]
+		},
+		{
 			name: "doT.js",
 			link: "http://olado.github.com/doT/",
 			link_text: "project",
