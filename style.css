@@ -28,6 +28,9 @@ body { background-attachment: fixed;
 }
 h1 { padding: 10px; text-align: center; font-size: 72px; color: rgba(255,255,255,.6); text-shadow: 2px 2px 2px rgba(50,50,50,.3); }
 h2 { margin: 5px 0px; text-shadow: 2px 2px 2px rgba(50,50,50,.3); }
+h2.unmaintained-warning { text-align: center; }
+h2.unmaintained-warning span { color: yellow; }
+h2.unmaintained-warning a { color: #55F; }
 fieldset { margin: 0px; padding: 0px; overflow: hidden; border: none; padding: 0px 10px 10px; }
 legend { background-color: #ccc; color: #666; padding: 5px; width: 100%; cursor: pointer; margin-bottom: .2em; }
 legend:before { content: "▶ "; font-size: .7em; }
