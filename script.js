@@ -85,7 +85,7 @@ var engines = [
 		},
 		{
 			name: "Nunjucks",
-			link: "https://github.com/jlongster/nunjucks",
+			link: "https://github.com/mozilla/nunjucks",
 			link_text: "github",
 			size: "20k",
 			traits: [ "client-side","server-side","logicish","compile","parts","string","format" ]
