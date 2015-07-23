@@ -29,6 +29,7 @@ body { background-attachment: fixed;
 h1 { padding: 10px; text-align: center; font-size: 72px; color: rgba(255,255,255,.6); text-shadow: 2px 2px 2px rgba(50,50,50,.3); }
 h2 { margin: 5px 0px; text-shadow: 2px 2px 2px rgba(50,50,50,.3); }
 h2.unmaintained-warning { 
+    text-align: center;
     background:  #ffa;
     padding: 20px 0;
     text-shadow: none;
