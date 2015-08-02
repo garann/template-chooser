@@ -105,6 +105,13 @@ var engines = [
 			traits: [ "client-side","logicless","compile","parts","dom","format" ]
 		},
 		{
+			name: "Raptor",
+			link: "https://github.com/raptorjs3/raptor-templates",
+			link_text: "github",
+			size: "~2.5k",
+			traits: [ "client-side","server-side","logicish","compile","parts","string","format" ]
+		},
+		{
 			name: "Transparency",
 			link: "http://leonidas.github.com/transparency/",
 			link_text: "project",
